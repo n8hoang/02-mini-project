@@ -1,0 +1,99 @@
+/* TODO: Add all css */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: gray;
+    background-color: rgb(34, 34, 34);
+    margin: 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subheading {
+    margin: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-style: dotted;
+    padding: 25px;
+}
+
+.page-title {
+    color: magenta;
+    margin-bottom: 30px;
+}
+
+#wrapper-grid {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid: gap 2em;
+}
+
+.container {
+    background-color: rgb(49, 49, 49);
+    padding: 20px;
+    margin: 20px;
+    border-style: dotted;
+    border-color: grey;
+    color: magenta;
+    flex: 1 0 100%;
+    transition-duration: 500ms;
+}
+
+
+.container:hover {
+    box-shadow: inset 0px 0px 9px magenta, 0px 0px 15px magenta;
+    background: rgb(187, 187, 187);
+}
+
+h2 {
+    font-size: 200%;
+    color: magenta;
+    border-style: solid;
+    border-color: gray;
+    padding: 10px;
+    position:relative;
+    bottom: 50px;
+    background-color: rgb(49, 49, 49);
+}
+
+section {
+    margin: 20px;
+}
+
+@media screen and (max-width:992px){
+    #wrapper-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:768px){
+    #wrapper-grid {
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+pre {
+    margin: 20px;
+    color: white;
+    background: linear-gradient(0deg, magenta, rgb(68, 68, 68));
+    border-radius: 20px;
+    padding: 35px;
+    padding-left: 5px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::selection {
+    background-color: turquoise;
+    color: black;
+}
